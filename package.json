@@ -1,0 +1,26 @@
+{
+    "name": "xenon-assembler-script-highlight",
+    "displayName": "Xenon Assembler Script Highlight",
+    "description": "Visual Studio Code extension for xenon engine assembler language",
+    "publisher": "whkong",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xenonassembler",
+            "aliases": ["Xenon Assembler Script", "xenonassembler"],
+            "extensions": [".exa"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xenonassembler",
+            "scopeName": "source.xenonassembler",
+            "path": "./syntaxes/xenonassembler.tmLanguage.json"
+        }]
+    }
+}
